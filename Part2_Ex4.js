@@ -16,3 +16,17 @@ for (let i = 0; i < bills.length; i++) {
 // Print results to verify
 console.log('Tips:', tips);
 console.log('Totals:', totals);
+// 4. Bonus: Function to calculate the average of an array
+const calcAverage = (arr) => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+};
+
+// Call the function with the 'totals' array
+const averageTotal = calcAverage(totals);
+
+// Print the average total to verify
+console.log('Average Total:', averageTotal.toFixed(2));
