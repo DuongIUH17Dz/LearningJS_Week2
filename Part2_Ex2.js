@@ -14,3 +14,4 @@ const total = bills.map((bill, index) => bill + tips[index]);
 
 // Print the total array to verify
 console.log(total);
+// done ex2
