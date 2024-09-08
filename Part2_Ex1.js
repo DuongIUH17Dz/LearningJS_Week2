@@ -20,3 +20,8 @@ const checkWinner = (avgDolphins, avgKoalas) => {
         console.log('No team wins!');
     }
 };
+console.log('Data 1:');
+checkWinner(avgDolphins1, avgKoalas1);
+
+console.log('Data 2:');
+checkWinner(avgDolphins2, avgKoalas2);
