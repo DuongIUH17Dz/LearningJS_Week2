@@ -10,3 +10,7 @@ const tips = bills.map(calcTip);
 
 // Print the tips array to verify
 console.log(tips);
+const total = bills.map((bill, index) => bill + tips[index]);
+
+// Print the total array to verify
+console.log(total);
