@@ -25,3 +25,4 @@ checkWinner(avgDolphins1, avgKoalas1);
 
 console.log('Data 2:');
 checkWinner(avgDolphins2, avgKoalas2);
+// done Part2_ex1
