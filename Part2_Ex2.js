@@ -6,3 +6,7 @@ const calcTip = (bill) => {
     }
 };
 const bills = [125, 555, 44];
+const tips = bills.map(calcTip);
+
+// Print the tips array to verify
+console.log(tips);
