@@ -5,3 +5,4 @@ const calcTip = (bill) => {
         return bill * 0.20;
     }
 };
+const bills = [125, 555, 44];
