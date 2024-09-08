@@ -56,6 +56,38 @@
         <input class="guess" type="number" placeholder="Enter a number">
         <button class="again">Again!</button>
     </div>
+    <script>
+        // Initial values
+        let secretNumber = Math.trunc(Math.random() * 20) + 1;
+        let score = 20;
+
+        // Select elements
+        const messageElement = document.querySelector('.message');
+        const numberElement = document.querySelector('.number');
+        const scoreElement = document.getElementById('score');
+        const guessInput = document.querySelector('.guess');
+        const againButton = document.querySelector('.again');
+
+        // Function to reset the game
+        const resetGame = () => {
+            // Restore initial values
+            secretNumber = Math.trunc(Math.random() * 20) + 1;
+            score = 20;
+
+            // Restore initial conditions of message, number, score, and guess input
+            messageElement.textContent = 'Start guessing...';
+            numberElement.textContent = '?';
+            numberElement.style.width = '15rem'; // Restore original number width
+            scoreElement.textContent = score;
+            guessInput.value = '';
+
+            // Restore original background color
+            document.body.style.backgroundColor = '#222';
+        };
+
+        // Attach event handler to the 'again' button
+        againButton.addEventListener('click', resetGame);
+    </script>
     
 </body>
 </html>
